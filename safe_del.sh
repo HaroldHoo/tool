@@ -28,4 +28,5 @@ for file in $(find $dir -type f); do
     dd if=/dev/urandom of=$file bs=$(wc -c $file | awk '{print $1}') count=1
 done
 
-
+rm -rf $dir
+printf "\033[31m[$dir] has been safe deleted. \031[0m\n"
