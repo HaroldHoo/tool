@@ -8,9 +8,9 @@
 dir=$(pwd)
 count=$(ls $dir -1 | wc -l)
 
-printf "\033[33m [$dir] files: $count \033[0m\n"
+printf "\033[31m[$dir] files: $count \031[0m\n"
 
-read -r -p "Press [y] to start eraser files [$dir]. Or [n] to stop. [Y/n] " input
+read -r -p "Press [y] to start eraser files! Or [n] to stop. [Y/n] " input
 case $input in
     [yY][eE][sS]|[yY])
         ;;
