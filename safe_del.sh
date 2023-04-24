@@ -8,7 +8,7 @@
 dir=$(pwd)
 count=$(ls $dir -1 | wc -l)
 
-printf "\033[31m[$dir] files: $count \031[0m\n"
+printf "\033[31m[$dir] files: $count \033[0m\n"
 
 read -r -p "Press [y] to start eraser files! Or [n] to stop. [Y/n] " input
 case $input in
@@ -29,4 +29,4 @@ for file in $(find $dir -type f); do
 done
 
 rm -rf $dir
-printf "\033[31m[$dir] has been safe deleted. \031[0m\n"
+printf "\033[31m[$dir] has been safe deleted. \033[0m\n"
