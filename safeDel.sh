@@ -7,6 +7,9 @@
 ##############################################
 
 dir=$(pwd)
+[[ -n "$1" ]] && [[ -d "$1" ]] && dir=$1
+dir=$(realpath -es $dir)
+
 count=$(ls $dir -1 | wc -l)
 
 printf "\033[31m[$dir] files: $count \033[0m\n"
