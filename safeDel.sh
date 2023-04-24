@@ -1,5 +1,6 @@
 #!/bin/bash
 ##############################################
+# bash -c "$(curl -fsSL 'https://raw.fastgit.org/HaroldHoo/tool/master/safeDel.sh')"
 # author: yaolong
 # mail: mail@yaolong.net
 # date: 2023-04-24
